@@ -2,8 +2,6 @@ const { Order, Product, OrderItem, Region, sequelize } = require("../../models")
 const { Op } = require("sequelize");
 const { spawn } = require("child_process");
 
-
-
 exports.refreshData = async (req, res) => {
     try {
 

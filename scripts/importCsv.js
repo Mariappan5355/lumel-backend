@@ -45,8 +45,8 @@ const processBatch = async (batch) => {
             );
         
             const parseDate = (dateStr) => {
-                const [day, month, year] = dateStr.split("-"); // Split DD-MM-YYYY
-                return new Date(`${year}-${month}-${day}`);   // Convert to YYYY-MM-DD
+                const [day, month, year] = dateStr.split("-")
+                return new Date(`${year}-${month}-${day}`);
             };
         
             const [product] = await Product.upsert(
